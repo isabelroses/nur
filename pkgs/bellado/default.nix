@@ -6,12 +6,11 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "bellado";
-  version = "0.1.0";
 
   src = fetchFromGitHub {
     owner = "isabelroses";
     repo = pname;
-    rev = "v${version}";
+    rev = "cac1f5c18727af97afb713d3bd0c51752207e209";
     sha256 = "sha256-58zUi6tftTvNoc/R/HO4RDC7n+NODKOrBCHH8QntKSY=";
   };
 
