@@ -6,6 +6,7 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "bellado";
+  version = "0.1.0";
 
   src = fetchFromGitHub {
     owner = "isabelroses";
