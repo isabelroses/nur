@@ -1,29 +1,27 @@
 {
   fetchFromGitHub,
   lib,
-  pkgs,
   rustPlatform,
-}:
-rustPlatform.buildRustPackage rec {
-  pname = "bellado";
-  version = "0.1.0";
+}: let
+  commit = "61f36030742df5ee85adf8e7d14871e24774a623";
+in
+  rustPlatform.buildRustPackage rec {
+    pname = "bellado";
+    version = builtins.substring 0 7 commit;
 
-  src = fetchFromGitHub {
-    owner = "isabelroses";
-    repo = pname;
-    rev = "cac1f5c18727af97afb713d3bd0c51752207e209";
-    sha256 = "sha256-fhct/drbhtpoYnNg4CI6wEFc+MUktWRs+Nrqju2zLOs=";
-  };
+    src = fetchFromGitHub {
+      owner = "isabelroses";
+      repo = pname;
+      rev = commit;
+      sha256 = "J+tMtoxe4NGDXWNDNiByiKkkdsBQW1h18sWD+fKLzJk=";
+    };
 
-  cargoSha256="000000000000000000000000000000000000000";
+    cargoSha256 = "sha256-hY4WKrLEF0UGQCJDZJJAYKuhTQMWWdQ0VHzP0hpEs2Y=";
 
-  nativeBuildInputs = with pkgs; [pkg-config];
-  buildInputs = with pkgs; [lz4 libxkbcommon];
-
-  meta = with lib; {
-    description = "A fast and simple cli todo tool";
-    homepage = "https://github.com/isabelroses/bellado";
-    license = licenses.gpl2;
-    platforms = platforms.linux;
-  };
-}
+    meta = with lib; {
+      description = "A fast and simple cli todo tool";
+      homepage = "https://github.com/isabelroses/bellado";
+      license = licenses.gpl2;
+      maintainers = with maintainers; [ isabelroses ];
+    };
+  }
