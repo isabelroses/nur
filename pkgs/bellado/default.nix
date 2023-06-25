@@ -15,7 +15,7 @@ rustPlatform.buildRustPackage rec {
     sha256 = "sha256-fhct/drbhtpoYnNg4CI6wEFc+MUktWRs+Nrqju2zLOs=";
   };
 
-  cargoSha256=$(nix-prefetch "{sha256}: let pkgs = import ./default.nix {}; pkg = pkgs.${name}.overrideAttrs (_: { src = pkgs.fetchFromGitHub { owner = \"${owner}\"; repo = \"${repo}\"; rev = \"${rev}\"; sha256 = \"${repoSha}\"; }; }); in pkg.overrideAttrs (_: {cargoSha256 = sha256;})")
+  cargoSha256="000000000000000000000000000000000000000";
 
   nativeBuildInputs = with pkgs; [pkg-config];
   buildInputs = with pkgs; [lz4 libxkbcommon];
