@@ -15,4 +15,5 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   bellado = pkgs.callPackage ./pkgs/bellado {};
+  catppuccin-hyprland = pkgs.callPackage ./pkgs/catppuccin-hyprland {};
 }
