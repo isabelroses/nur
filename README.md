@@ -1,6 +1,6 @@
 # isabel roses' nur
 
-[![Build and populate cache](https://github.com/nekowinston/nur/actions/workflows/build.yml/badge.svg)](https://github.com/nekowinston/nur/actions/workflows/build.yml)
+[![Build and populate cache](https://github.com/isabelroses/nur/actions/workflows/build.yml/badge.svg)](https://github.com/isabelroses/nur/actions/workflows/build.yml)
 [![Cachix Cache](https://img.shields.io/badge/cachix-nekowinston-blue.svg)](https://nekowinston.cachix.org)
 
 ## packages
@@ -8,7 +8,7 @@
 | Packages                             | Note             | Version    |
 | ------------------------------------ | ---------------- | ---------- |
 | [`catppuccin-hyprland`][catppuccin-hyprland]                  |                  | 99a88fd    |
-| [`bellado`][bellado]                              |                  | 61f3603    |
+| [`bellado`][bellado]                              |                  | 5a570f4    |
 
 ## Usage
 
