@@ -3,7 +3,7 @@
   lib,
   rustPlatform,
 }: let
-  commit = "5a570f441597656484509b617fb38ba8b7be5027";
+  commit = "56f051ea996a85d8ab1f624bed868e675e6ad164";
 in
   rustPlatform.buildRustPackage rec {
     pname = "bellado";
@@ -13,10 +13,10 @@ in
       owner = "isabelroses";
       repo = pname;
       rev = commit;
-      sha256 = "k84WXZmA8McHSO1n1K5GNPFufkPzGPxYHd4KxAC2wC0=";
+      sha256 = "iIXWlPAvNPqL77Lh1SM+75LAJle5BG4U5gpKYDn8yrM=";
     };
 
-    cargoSha256 = "sha256-CU/BhTnnFBznbZjcIqFCE836YbF9xFPHvr15QR7WV6M=";
+    cargoSha256 = "sha256-GHv/2cSGZKiwOAj4dlhxL4wQo5LQaxnZQRDrCbpPI9E=";
 
     meta = with lib; {
       description = "A fast and simple cli todo tool";
@@ -26,4 +26,3 @@ in
       platforms = platforms.unix;
     };
   }
-
