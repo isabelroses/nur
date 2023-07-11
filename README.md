@@ -2,7 +2,7 @@
 
 <div align="center">
 <img src="https://img.shields.io/github/stars/isabelroses/nur?color=f5c2e7&labelColor=303446&style=for-the-badge&logo=starship&logoColor=f5c2e7">
-<img src="https://github.com/isabelroses/nur/actions/workflows/build.yml/badge.svg?color=f5c2e7&labelColor=303446&style=for-the-badge&logo=starship&logoColor=f5c2e7">
+<a href="https://github.com/isabelroses/nur/actions/workflows/build.yml"><img alt="ci" src="https://img.shields.io/github/actions/workflow/status/isabelroses/nur/build.yml?label=build&style=for-the-badge&logo=starship&logoColor=f5c2e7" /></a>
 <a href="https://isabelroses.cachix.org"><img src="https://img.shields.io/badge/cachix-isabelroses.svg?color=f5c2e7&labelColor=303446&style=for-the-badge&logo=starship&logoColor=f5c2e7"></a>
 
 ## packages
