@@ -37,6 +37,8 @@ jobs:
     - name: Build packages
       run: |
         nix build -L .\#bellado
+        nix build -L .\#catppuccin-hyprland
+        nix build -L .\#catppuccinifier
 
     #- name: Trigger NUR update
     #  # Don't replace <YOUR_REPO_NAME> here!
