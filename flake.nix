@@ -1,24 +1,29 @@
 {
-  description = "isabelroses' NUR repository";
+  description = "isabelroses' NUR";
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
-  outputs = {
-    self,
-    nixpkgs,
-    ...
-  } @ inputs: let
-    systems = [
-      "x86_64-linux"
-    ];
+    catppuccinifier = {
+      url = "github:lighttigerXIV/catppuccinifier";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
+
+  outputs = { nixpkgs, ... } @ inputs: let
+    systems = [ "x86_64-linux" ];
     forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f system);
   in {
-    packages = forAllSystems (system:
-      import ./default.nix {
-        pkgs = import nixpkgs {
-          inherit system;
-        };
-      });
-    overlays.default = import ./overlays;
+    packages = forAllSystems (system: let
+      pkgs = import nixpkgs {inherit system;};
+    in {
+      bellado = pkgs.callPackage ./pkgs/bellado {};
+      catppuccin-hyprland = pkgs.callPackage ./pkgs/catppuccin-hyprland {};
+      catppuccinifier = inputs.catppuccinifier.packages.${system}.catppuccinifier; 
+    });
+  }
+  // {
+    nixosModules = import ./modules;
+    overlays = import ./overlays; # nixpkgs overlays 
   };
 }
