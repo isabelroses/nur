@@ -1,5 +1,5 @@
 {
-  description = "nekowinston NUR repository";
+  description = "isabelroses' NUR repository";
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 

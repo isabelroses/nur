@@ -10,7 +10,7 @@
 | Packages                             | Note             | Version    |
 | ------------------------------------ | ---------------- | ---------- |
 | [`catppuccin-hyprland`][catppuccin-hyprland]                  |                  | 99a88fd    |
-| [`bellado`][bellado]                              |                  | 56f051e    |
+| [`bellado`][bellado]                              |                  | aa29c03    |
 
 ## Usage
 
