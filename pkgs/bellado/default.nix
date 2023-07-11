@@ -2,8 +2,9 @@
   fetchFromGitHub,
   lib,
   rustPlatform,
+  installShellFiles,
 }: let
-  commit = "aa29c0379d5919f553ea13ccf1f74f86d7a5eda7";
+  commit = "d84c1321353e822b9ea6c47d09a0cb16181e20a5";
 in
   rustPlatform.buildRustPackage rec {
     pname = "bellado";
@@ -13,10 +14,17 @@ in
       owner = "isabelroses";
       repo = pname;
       rev = commit;
-      sha256 = "wRaE3v5zehssuo6w+gI1mwRK4Rn6JCCbrxfNCGYFadY=";
+      sha256 = "/PrqOIsB8g/WqMuqzlQEXM3e3oDbCPDpkh0ALyiEmZs=";
     };
 
-    cargoSha256 = "sha256-RbV58uUjWT0vdcNJtV0jCm2ilbijZL6qUAP7gDBvZdE=";
+    cargoSha256 = "sha256-TC7XtTDEC0RDfbmFqcRT+Z7lyOO8ZKyTZhMGdaPFBLI=";
+
+    nativeBuildInputs = [ installShellFiles ];
+
+    preFixup = ''
+      installShellCompletion $releaseDir/build/bellado-*/out/bellado.{bash,fish}
+      installShellCompletion --zsh $releaseDir/build/bellado-*/out/_bellado
+    '';
 
     meta = with lib; {
       description = "A fast and simple cli todo tool";
