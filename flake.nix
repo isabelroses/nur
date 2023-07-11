@@ -19,7 +19,7 @@
     in {
       bellado = pkgs.callPackage ./pkgs/bellado {};
       catppuccin-hyprland = pkgs.callPackage ./pkgs/catppuccin-hyprland {};
-      catppuccinifier = inputs.catppuccinifier.packages.${system}.cli; 
+      catppuccinifier-cli = inputs.catppuccinifier.packages.${system}.cli; 
     });
   }
   // {
