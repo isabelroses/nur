@@ -17,7 +17,7 @@ in
       sha256 = "/PrqOIsB8g/WqMuqzlQEXM3e3oDbCPDpkh0ALyiEmZs=";
     };
 
-    cargoSha256 = "sha256-TC7XtTDEC0RDfbmFqcRT+Z7lyOO8ZKyTZhMGdaPFBLI=";
+    cargoSha256 = "sha256-j5r+VFQSbORuSmf8xmSd90jd5UHd2SJSMiIFCU+Nvkg=";
 
     nativeBuildInputs = [ installShellFiles ];
 
