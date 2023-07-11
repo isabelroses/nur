@@ -39,6 +39,8 @@ jobs:
         nix build -L .\#bellado
         nix build -L .\#catppuccin-hyprland
         nix build -L .\#catppuccinifier-cli
+        nix build -L .\#lutgen-rs
+
 
     #- name: Trigger NUR update
     #  # Don't replace <YOUR_REPO_NAME> here!
