@@ -24,6 +24,7 @@
 , which
 , xvfb-run
 , nixosTests
+, upower
 }:
 
 let
@@ -65,6 +66,7 @@ in stdenv.mkDerivation rec {
 
   buildInputs = [
     cairo
+    upower
     readline
     libsysprof-capture
     spidermonkey_102
