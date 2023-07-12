@@ -18,6 +18,7 @@
 , libxml2
 , dbus
 , gdk-pixbuf
+, networkmanager
 , harfbuzz
 , makeWrapper
 , wrapGAppsHook
@@ -25,6 +26,7 @@
 , xvfb-run
 , nixosTests
 , upower
+, gnome-bluetooth
 }:
 
 let
@@ -67,6 +69,8 @@ in stdenv.mkDerivation rec {
   buildInputs = [
     cairo
     upower
+    gnome-bluetooth
+    networkmanager
     readline
     libsysprof-capture
     spidermonkey_102
