@@ -26,7 +26,7 @@
 , xvfb-run
 , nixosTests
 , upower
-, gnome-bluetooth
+, glib-networking
 }:
 
 let
@@ -69,7 +69,8 @@ in stdenv.mkDerivation rec {
   buildInputs = [
     cairo
     upower
-    gnome-bluetooth
+    gnome.gnome-bluetooth
+    glib-networking
     networkmanager
     readline
     libsysprof-capture
