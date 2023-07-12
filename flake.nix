@@ -21,6 +21,7 @@
       catppuccin-hyprland = pkgs.callPackage ./pkgs/catppuccin-hyprland {};
       catppuccinifier-cli = inputs.catppuccinifier.packages.${system}.cli;
       lutgen-rs = pkgs.callPackage ./pkgs/lutgen-rs {};
+      gjs = pkgs.callPackage ./pkgs/gjs {};
     });
   }
   // {
