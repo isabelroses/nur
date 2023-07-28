@@ -8,6 +8,11 @@
       url = "github:lighttigerXIV/catppuccinifier";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    ags = {
+      url = "github:Aylur/ags";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { nixpkgs, ... } @ inputs: let
@@ -22,6 +27,7 @@
       catppuccinifier-cli = inputs.catppuccinifier.packages.${system}.cli;
       lutgen-rs = pkgs.callPackage ./pkgs/lutgen-rs {};
       gjs = pkgs.callPackage ./pkgs/gjs {};
+      ags = inputs.ags.packages.${system}.default;
     });
   }
   // {

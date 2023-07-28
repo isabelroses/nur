@@ -15,6 +15,7 @@
 | [`bellado`][bellado]                              |                  | d84c132    |
 | [`catppuccinifier-cli`][catppuccinifier]                  |                  | git        |
 | [`lutgen-rs`][lutgen-rs]                            |                  | 76b728a    |
+| [`ags`][ags]                                  |                  | git        |
 
 ### Usage
 
