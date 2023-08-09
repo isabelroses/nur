@@ -64,3 +64,4 @@
 [bellado]: https://github.com/isabelroses/bellado
 [catppuccinifier]: https://github.com/lighttigerXIV/catppuccinifier
 [lutgen-rs]: https://github.com/ozwaldorf/lutgen-rs
+[ags]: https://github.com/Aylur/ags
