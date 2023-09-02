@@ -28,7 +28,7 @@
       lutgen-rs = pkgs.callPackage ./pkgs/lutgen-rs {};
       gjs = pkgs.callPackage ./pkgs/gjs {};
       ags = inputs.ags.packages.${system}.default;
-      sddm-catppuccin = pkgs.callPackage ./pkgs/sddm {};
+      sddm-catppuccin = pkgs.callPackage ./pkgs/sddm-catppucin {};
     });
   }
   // {
