@@ -16,6 +16,7 @@
 | [`catppuccinifier-cli`][catppuccinifier]                  |                  | git        |
 | [`lutgen-rs`][lutgen-rs]                            |                  | 76b728a    |
 | [`ags`][ags]                                  |                  | git        |
+| [`sddm-catppuccin`][sddm-catppuccin]                      |                  | 7fc67d10   |
 
 ### Usage
 
@@ -65,3 +66,4 @@
 [catppuccinifier]: https://github.com/lighttigerXIV/catppuccinifier
 [lutgen-rs]: https://github.com/ozwaldorf/lutgen-rs
 [ags]: https://github.com/Aylur/ags
+[sddm-catppuccin]: https://github/catppuccin/sddm

@@ -41,6 +41,8 @@ jobs:
         nix build -L .\#catppuccinifier-cli
         nix build -L .\#lutgen-rs
         nix build -L .\#gjs
+        nix build -L .\#ags
+        nix build -L .\#sddm-catppuccin
 
 
     #- name: Trigger NUR update
