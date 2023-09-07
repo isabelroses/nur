@@ -20,6 +20,24 @@
         "type": "github"
       }
     },
+    "bellado": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1694085784,
+        "narHash": "sha256-JwHWAp3d477H4rSqx1kwm1UZ8qol7/Lg4qhENlmlpJY=",
+        "owner": "isabelroses",
+        "repo": "bellado",
+        "rev": "d2214060079a2495fcc9531d52fb3611d522c474",
+        "type": "github"
+      },
+      "original": {
+        "owner": "isabelroses",
+        "repo": "bellado",
+        "type": "github"
+      }
+    },
     "catppuccinifier": {
       "inputs": {
         "crane": "crane",
@@ -120,6 +138,22 @@
     },
     "nixpkgs": {
       "locked": {
+        "lastModified": 1687379288,
+        "narHash": "sha256-cSuwfiqYfeVyqzCRkU9AvLTysmEuSal8nh6CYr+xWog=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "ef0bc3976340dab9a4e087a0bcff661a8b2e87f3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-23.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
         "lastModified": 1694032533,
         "narHash": "sha256-I8cfCV/4JNJJ8KHOTxTU1EphKT8ARSb4s9pq99prYV0=",
         "owner": "NixOS",
@@ -137,8 +171,9 @@
     "root": {
       "inputs": {
         "ags": "ags",
+        "bellado": "bellado",
         "catppuccinifier": "catppuccinifier",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       }
     },
     "rust-overlay": {
