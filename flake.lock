@@ -47,11 +47,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1696706759,
-        "narHash": "sha256-1PuEoh6QP7tShLgSVsxGZLYmbaq/avYuTljCpJ8Pu/o=",
+        "lastModified": 1696796556,
+        "narHash": "sha256-J7OwGT2A32zz49XRATucJYaXmD7fmtAzQ1Wb//AXwP4=",
         "owner": "lighttigerXIV",
         "repo": "catppuccinifier",
-        "rev": "fc1e2ef870634c55afd88b74dadb3879cd1087b9",
+        "rev": "eacca3a3b6eb80b2d0e9d8cdccf935e407de44cb",
         "type": "github"
       },
       "original": {
@@ -154,11 +154,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1696693680,
-        "narHash": "sha256-PH0HQTkqyj7DmdPKPwrrXwVURLBqzZs4nqnDw9q8mhg=",
+        "lastModified": 1696725822,
+        "narHash": "sha256-B7uAOS7TkLlOg1aX01rQlYbydcyB6ZnLJSfaYbKVww8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "945559664c1dc5836173ee12896ba421d9b37181",
+        "rev": "5aabb5780a11c500981993d49ee93cfa6df9307b",
         "type": "github"
       },
       "original": {
