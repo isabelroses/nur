@@ -1,3 +1,7 @@
+# THIS PROJECT IS NOW DEREPRECATED
+
+## See [https://github.com/isabelroses/dotfiles](https://github.com/isabelroses/dotfiles) to get your packages now
+
 <div align="center">
 
 # isabel roses' nur
@@ -9,14 +13,14 @@
 
 ### packages
 
-| Packages                             | Note             | Version    |
-| ------------------------------------ | ---------------- | ---------- |
-| [`catppuccin-hyprland`][catppuccin-hyprland]                  |                  | 99a88fd    |
-| [`bellado`][bellado]                              |                  | d84c132    |
-| [`catppuccinifier-cli`][catppuccinifier]                  |                  | git        |
-| [`lutgen-rs`][lutgen-rs]                            |                  | 76b728a    |
-| [`ags`][ags]                                  |                  | git        |
-| [`sddm-catppuccin`][sddm-catppuccin]                      |                  | 7fc67d10   |
+| Packages                                     | Note | Version  |
+| -------------------------------------------- | ---- | -------- |
+| [`catppuccin-hyprland`][catppuccin-hyprland] |      | 99a88fd  |
+| [`bellado`][bellado]                         |      | d84c132  |
+| [`catppuccinifier-cli`][catppuccinifier]     |      | git      |
+| [`lutgen-rs`][lutgen-rs]                     |      | 76b728a  |
+| [`ags`][ags]                                 |      | git      |
+| [`sddm-catppuccin`][sddm-catppuccin]         |      | 7fc67d10 |
 
 ### Usage
 
